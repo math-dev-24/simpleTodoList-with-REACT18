@@ -1,8 +1,7 @@
-import {useContext} from "react";
-import {todoDispatcherContext} from "../context/todo.context";
+import { useTodosDispatch} from "../context/todo.context";
 
 export default function Todo({todo}){
-    const dispatch = useContext(todoDispatcherContext)
+    const dispatch = useTodosDispatch()
 
     return(
         <>
